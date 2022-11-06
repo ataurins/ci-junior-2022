@@ -51,16 +51,16 @@ pipeline {
                 }
             }
         }
-        post {
-            always {
-                echo "This will be always executed"
-            }
-            success {
-                echo "This will be executed on success"
-            }
-            failure {
-                echo "This will be executed on failure"
-            }
+    }
+    post {
+        always {
+            echo "This will be always executed"
+        }
+        success {
+            echo "This will be executed on success"
+        }
+        failure {
+            echo "This will be executed on success"
         }
     }
 }
